@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Red Hat Display", sans-serif;
+    max-width: 1440px;
+    background: url(../images/pattern-background-desktop.svg) fixed no-repeat;
+    background-color: #E1E8FF;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+p {
+    color: rgb(162, 162, 162);
+}
+
+/**************************************
+** CARD **
+**************************************/
+.card {
+    border-radius: 4%;
+    background-color: #FDFEFF;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 10% auto;
+    overflow: hidden;
+}
+
+/**************************************
+** HERO **
+**************************************/
+.hero {
+    height: 33%;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/**************************************
+** BODY **
+**************************************/
+h1 {
+    padding-top: 5%;
+}
+.body-card p {
+    padding: 0 15%;
+}
+
+/**************************************
+** ANNUAL PLAN **
+**************************************/
+.annual-plan {
+    width: 75%;
+    display: grid;
+    margin: 6% auto;
+    padding: 3%;
+    background-color: #e8eaed97;
+    border-radius: 15px;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: 25% 50% 25%;
+}
+.annual-plan a {
+    text-decoration: underline;
+    color: #3e00c4;
+}
+.annual-plan a:hover {
+    text-decoration: none;
+}
+.annual-plan h2 {
+    margin: 0;
+    letter-spacing: 0px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.annual-plan p {
+    margin: 0;
+    padding: 0;
+    margin-inline-start: -1em;
+}
+.icon {
+    width: fit-content;
+    height: auto;
+}
+/**************************************
+** BUTTON **
+**************************************/
+.payment, .cancel {
+    width: 75%;
+    text-align: center;
+    margin: 2% auto 3%;
+}
+.payment {
+    background-color: #382AE3;
+    border-radius: 15px;
+    box-shadow: 0px 20px 37px -1px rgba(56,42,227,0.3);
+
+}
+.payment:hover {
+    background-color: #7269daef;
+}
+.payment a {
+    color: #ffffff;
+    letter-spacing: 1px;
+    display: block;
+    padding: 5%;
+}
+.cancel {
+
+    padding: 4%;
+}
+.cancel a {
+    color: rgb(121, 121, 121);
+    font-weight: bolder;
+}
+.cancel a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ MEDIA QUERIES @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: none;
+}
+    .card {
+        width: 95%;
+    }
+    .body-card p {
+        padding: 0 10%;
+    }
+    .annual-plan, .payment, .cancel {
+        width: 90%;
+    }
+
+}
